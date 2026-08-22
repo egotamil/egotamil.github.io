@@ -57,6 +57,9 @@ baseurl: ""
 
 permalink: /:title/
 
+include:
+  - _posts
+
 defaults:
   # _posts
   - scope:
