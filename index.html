@@ -8,6 +8,8 @@ layout: default
 
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
 
+      <p class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</p>
+
       <div class="entry">
         {{ post.excerpt }}
       </div>
