@@ -56,8 +56,8 @@ baseurl: ""
 #
 
 permalink: /blog/:year/:month/:day/:title/
-paginate: 5 # amount of posts to show
-paginate_path: /page:num/
+
+future: true
 
 include:
   - _posts
@@ -68,7 +68,7 @@ defaults:
       path: ""
       type: posts
     values:
-      layout: single
+      layout: post
       read_time: true
       comments: true
       share: true
@@ -93,7 +93,7 @@ sass:
   style: :expanded # You might prefer to minify using :compressed
 
 # Use the following plug-ins
-gems:
+plugins:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
   - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
 
